@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RestMapController.prepare(for:sender:):RestMapController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "restaurants[temp]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RestMapController.configurePlacemark():RestMapController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "restaurants[restaurantData].latitude!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RestDetailController.tableView(_:cellForRowAt:):RestDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.restaurant">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RestDetailController.viewDidLoad():RestDetailController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
