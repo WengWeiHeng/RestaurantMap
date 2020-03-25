@@ -286,7 +286,7 @@ class RestMapController: UIViewController{
     
     //get json data
     func getRestaurantInfo(){
-        let urlString: String = "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=5a66e88db247132a34d94d837b79035c&latitude=35.668441&longitude=139.600782&range=3&hit_per_page=100&offset_page=1"
+        let urlString: String = "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid= (( 自keyidに変更する )) &latitude=35.668441&longitude=139.600782&range=3&hit_per_page=100&offset_page=1"
         guard let url: URL = URL(string: urlString) else{ return }
 
         let semaphore = DispatchSemaphore(value: 0)
