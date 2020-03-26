@@ -9,7 +9,8 @@
 開発言語：swift 5.1  
 使用しているAPI、SDK：ぐるなびレストランAPI  
 使用ライブラリ：Alamofire、AlamofireImage、SwiftyJSON  
-環境構築：
+
+###環境構築
   1. CocoaPodsがインストールされていない場合、CocoaPodsをインストールする。インストール手順は以下のサイトを参考にする。https://cocoapods.org/
   2. 任意のディレクトリに、プロジェクトのリポジトリをcloneする。
   3. ターミナルを起動し、cloneしたディレクトリ(podfileがあるディレクトリ）にカレントディレクトリを移動する。
