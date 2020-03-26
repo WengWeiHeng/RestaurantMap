@@ -16,7 +16,7 @@ keyid: 自keyidに変更する
 ### デザイン面こだわったポイント
   - ちょうどいいページングで必要な機能を載せる。SwipeGestureRecognizerのアニメでメインページにMapや検索機能、一覧リストを同時に表示できる。
 ### 該当プロジェクトのリポジトリ
-  - //github url
+  - https://github.com/WengWeiHeng/RestaurantMap
   
 ## アプリケーション機能
 
