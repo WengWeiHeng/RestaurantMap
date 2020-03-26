@@ -15,6 +15,8 @@
 		B0466CF2241E308200220480 /* RestDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0466CF1241E308200220480 /* RestDetailController.swift */; };
 		B066908D2420766000FDFECD /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066908C2420766000FDFECD /* SearchInputView.swift */; };
 		B0A248AE241F9A6800E1D5A6 /* RestMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A248AD241F9A6800E1D5A6 /* RestMapController.swift */; };
+		B0B37D7E242CBCEA00EC47F8 /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B37D7D242CBCEA00EC47F8 /* AppProperties.swift */; };
+		B0B37D81242CBDC800EC47F8 /* gnavi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0B37D80242CBDC800EC47F8 /* gnavi.plist */; };
 		B0DCDEE1241B5F5C0012B56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DCDEE0241B5F5C0012B56F /* AppDelegate.swift */; };
 		B0DCDEE3241B5F5C0012B56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DCDEE2241B5F5C0012B56F /* SceneDelegate.swift */; };
 		B0DCDEE8241B5F5C0012B56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DCDEE6241B5F5C0012B56F /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		B0466CF1241E308200220480 /* RestDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDetailController.swift; sourceTree = "<group>"; };
 		B066908C2420766000FDFECD /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
 		B0A248AD241F9A6800E1D5A6 /* RestMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMapController.swift; sourceTree = "<group>"; };
+		B0B37D7D242CBCEA00EC47F8 /* AppProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProperties.swift; sourceTree = "<group>"; };
+		B0B37D80242CBDC800EC47F8 /* gnavi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = gnavi.plist; sourceTree = "<group>"; };
 		B0DCDEDD241B5F5C0012B56F /* RestaurantMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DCDEE0241B5F5C0012B56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0DCDEE2241B5F5C0012B56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,11 +117,13 @@
 				B0DCDEF7241B5F6B0012B56F /* View */,
 				B0466CEE241C9F2A00220480 /* Model */,
 				B0DCDEE0241B5F5C0012B56F /* AppDelegate.swift */,
+				B0B37D7D242CBCEA00EC47F8 /* AppProperties.swift */,
 				B0DCDEE2241B5F5C0012B56F /* SceneDelegate.swift */,
 				B0DCDEE6241B5F5C0012B56F /* Main.storyboard */,
 				B0DCDEEC241B5F5E0012B56F /* Assets.xcassets */,
 				B0DCDEEE241B5F5E0012B56F /* LaunchScreen.storyboard */,
 				B0DCDEF1241B5F5E0012B56F /* Info.plist */,
+				B0B37D80242CBDC800EC47F8 /* gnavi.plist */,
 				B0DCDEE9241B5F5C0012B56F /* RestaurantMap.xcdatamodeld */,
 			);
 			path = RestaurantMap;
@@ -214,6 +220,7 @@
 			files = (
 				B0DCDEF0241B5F5E0012B56F /* LaunchScreen.storyboard in Resources */,
 				B0DCDEED241B5F5E0012B56F /* Assets.xcassets in Resources */,
+				B0B37D81242CBDC800EC47F8 /* gnavi.plist in Resources */,
 				B0DCDEE8241B5F5C0012B56F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +269,7 @@
 				B0A248AE241F9A6800E1D5A6 /* RestMapController.swift in Sources */,
 				B0FCB69324235AFE0053B027 /* DetailDescriptionCell.swift in Sources */,
 				B0245214241E748B00155B8E /* DetailInfoCell.swift in Sources */,
+				B0B37D7E242CBCEA00EC47F8 /* AppProperties.swift in Sources */,
 				B0466CF0241C9F4200220480 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

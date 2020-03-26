@@ -286,11 +286,32 @@ class RestMapController: UIViewController{
     
     //get json data
     func getRestaurantInfo(){
-        let urlString: String = "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid= (( 自keyidに変更する )) &latitude=35.668441&longitude=139.600782&range=3&hit_per_page=100&offset_page=1"
-        guard let url: URL = URL(string: urlString) else{ return }
+        let gnaviURL = URL(string: AppProperties.shared.gnaviDictionary["url"] as! String)!
+        let QueryItemKeyid = URLQueryItem(name: "keyid", value: (AppProperties.shared.gnaviDictionary["keyid"] as! String))
+        let QueryItemRange = URLQueryItem(name: "range", value: "3")
+        let QueryItemHitPerPage = URLQueryItem(name: "hit_per_page", value: "100")
+        let QueryItemOffsetPage = URLQueryItem(name: "offset_page", value: "1")
+        
+        var queryItems = [
+                QueryItemKeyid,
+                QueryItemRange,
+                QueryItemHitPerPage,
+                QueryItemOffsetPage]
+        
+        let QueryItemLatitude = URLQueryItem(name: "latitude", value: "35.668441")
+        let QueryItemLongitude = URLQueryItem(name: "longitude", value: "139.600782")
+        
+        queryItems.append(QueryItemLatitude)
+        queryItems.append(QueryItemLongitude)
+        
+        guard var components = URLComponents(url: gnaviURL, resolvingAgainstBaseURL: nil != gnaviURL.baseURL) else {
+            return
+        }
+        
+        components.queryItems = queryItems
 
         let semaphore = DispatchSemaphore(value: 0)
-        let task = URLSession.shared.dataTask(with: url, completionHandler: { data, response, error in
+        let task = URLSession.shared.dataTask(with: components.url!, completionHandler: { data, response, error in
             do{
                 self.restaurant = try JSONDecoder().decode(Restaurant.self, from: data!)
                 self.restaurants.append(contentsOf: self.restaurant.rest)
