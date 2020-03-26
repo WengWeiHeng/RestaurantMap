@@ -15,7 +15,7 @@
   2. 任意のディレクトリに、プロジェクトのリポジトリをcloneする。
   3. ターミナルを起動し、cloneしたディレクトリ(podfileがあるディレクトリ）にカレントディレクトリを移動する。
   4. 使用ライブラリをCocoaPods経由でインストールする。
-  5. RestMapController.swiftの289行目にあるkeyidを自身で登録したぐるなびAPIのkeyidに変更する。  
+  5. gnavi.listのkeyid Valueを自身で登録したぐるなびAPIのkeyidに変更する。  
   ![image](https://github.com/WengWeiHeng/RestaurantMap/blob/master/keyid_image.png)
 
 ### コンセプト
