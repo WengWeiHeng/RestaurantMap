@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>keyid</key>
-	<string>5a66e88db247132a34d94d837b79035c</string>
+	<string>//自身で登録したぐるなびAPIのkeyidに変更する</string>
 	<key>url</key>
 	<string>https://api.gnavi.co.jp/RestSearchAPI/v3/</string>
 </dict>
